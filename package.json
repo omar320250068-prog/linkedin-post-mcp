@@ -1,0 +1,21 @@
+{
+  "name": "linkedin-post-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal, auditable MCP server for publishing text posts to LinkedIn via the official REST API (POST /rest/posts).",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "linkedin-post-mcp": "index.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "auth-check": "node check-auth.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.1"
+  }
+}
